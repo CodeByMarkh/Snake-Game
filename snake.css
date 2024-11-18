@@ -1,0 +1,43 @@
+
+
+body{
+    text-align: center;
+}
+
+#board {
+    background: linear-gradient(to bottom, #0066cc, #00cc99); /* Blue to Green gradient */
+    border: 5px solid #004d80; /* Dark blue border */
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+.snake {
+    animation: snakeGlow 1s infinite alternate; /* Add a glowing effect to the snake */
+    border-radius: 3px;
+}
+
+
+.food {
+    border-radius: 50%; /* Make the food circular */
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7); /* Red glow effect */
+}
+
+
+@keyframes snakeGlow {
+    0% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+}
+.snake-segment {
+    background: linear-gradient(45deg, #006400, #00cc00); /* Dark green to bright green */
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.8); /* Subtle glow effect */
+    border: 1px solid #004d00; /* Dark green border for a segmented look */
+}
+
